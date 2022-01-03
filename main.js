@@ -40,7 +40,7 @@ function setTime() {
   const timeEl = document.querySelector("#time");
   const dayEl = document.querySelector("#day");
 
-  timeEl.innerHTML = `${hours %12}:${minute > 10 ? `${minute}`:`0${minute}`}:${second>10?`${second}`:`0${second}`}` ;
+  timeEl.innerHTML = `${hours %12}:${minute >= 10 ? `${minute}`:`0${minute}`}:${second>10?`${second}`:`0${second}`}` ;
 
   dayEl.innerHTML = `${year}  ${day}  ${month} ${date}`;
 
